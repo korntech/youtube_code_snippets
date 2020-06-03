@@ -1,6 +1,5 @@
 import tkinter as tk
 
-
 def print_sth(text):
     print(text)
 
