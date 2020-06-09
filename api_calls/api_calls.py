@@ -13,7 +13,7 @@ for item in resp:
   print(f"Country: {item['capital']})
   print(20 * '-')
   
- #Listcomp used to filter out specific records 
- [item for item in resp if item['name'] == 'Poland'] 
+#Listcomp used to filter out specific records 
+[item for item in resp if item['name'] == 'Poland'] 
   
   
