@@ -74,7 +74,7 @@ def main():
     if args.fout:
         cwd = os.getcwd()
         df = pd.DataFrame(res_dict)
-        df.to_csv('test.csv', index=False)
+        df.to_csv(args.fout, index=False)
         print(f'Results saved under the following directory {cwd}.')
         
         
