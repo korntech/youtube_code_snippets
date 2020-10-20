@@ -16,10 +16,24 @@ pipeline{
 
 
         }
-        stage('Test'){
+        stage('Deploy'){
+           input{
+               message 'Deploy?'
+               ok 'Do it'
+               parameters{
+                   string(name: 'TARGET_ENVIRONMENT', defaultValue: 'PROD', description: 'Target deployment env')
+               }
+
+
+           }
             steps{
-                echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}"
+                echo "Deploying release ${RELEASE} to env ${TARGET_ENVIRONMENT}"
+
             }
+
+
+
+
         }
 
     }
