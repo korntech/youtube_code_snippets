@@ -2,7 +2,6 @@ pipeline{
     agent any
     environment {
         RELEASE='20.04'
-
     }
     stages {
         stage('Build'){
