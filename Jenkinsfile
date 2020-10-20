@@ -37,5 +37,11 @@ pipeline{
         }
 
     }
+    post {
+        always {
+            echo "Prints whether deploy happened or not."
+        }
+
+    }
 
 }
